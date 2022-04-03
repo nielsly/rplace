@@ -1,18 +1,18 @@
 // ==UserScript==
 // @name         SuperStonk rplace autoclicker
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  support clicking
-// @author       halfdane
+// @author       nielsly
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        none
-// @updateURL    https://halfdane.github.io/rplace/autoclicker.user.js
-// @downloadURL  https://halfdane.github.io/rplace/autoclicker.user.js
+// @updateURL    https://nielsly.github.io/rplace/autoclicker.user.js
+// @downloadURL  https://nielsly.github.io/rplace/autoclicker.user.js
 // ==/UserScript==
 
-const X_OFFSET = 773
-const Y_OFFSET = 735
+const X_OFFSET = 1899
+const Y_OFFSET = 13
 
 async function run() {
     const debug=false;
@@ -29,6 +29,7 @@ async function run() {
     }
 
     const colors = {
+		1: 	"#7D0019",
         2:  "#FF4500",
         3:  "#FFA800",
         4:  "#FFD635",
@@ -63,7 +64,7 @@ async function run() {
                 resolve({template_ctx: template_ctx, template_img: img})
             }
             img.onerror = reject
-            img.src = "https://raw.githubusercontent.com/rplacesuperstonk/rplace-image/main/reference.png?tstamp=" + Math.floor(Date.now() / 10000);
+            img.src = "https://i.nielsgorter.com/tue3tud.png" + Math.floor(Date.now() / 10000);
         })
     }
 
