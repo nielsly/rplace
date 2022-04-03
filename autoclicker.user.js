@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TU/e <3 TU Delft
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  support clicking
 // @author       nielsly
 // @match        https://hot-potato.reddit.com/embed*
@@ -64,7 +64,7 @@ async function run() {
                 resolve({template_ctx: template_ctx, template_img: img})
             }
             img.onerror = reject
-            img.src = "https://i.nielsgorter.com/tue3tud.png";
+            img.src = "http://i.nielsgorter.com/tue3tud.png";
         })
     }
 
