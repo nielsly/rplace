@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         SuperStonk rplace autoclicker
+// @name         TU/e <3 TU Delft
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  support clicking
@@ -11,8 +11,8 @@
 // @downloadURL  https://nielsly.github.io/rplace/autoclicker.user.js
 // ==/UserScript==
 
-const X_OFFSET = 1899
-const Y_OFFSET = 13
+const X_OFFSET = 1896
+const Y_OFFSET = 4
 
 async function run() {
     const debug=false;
